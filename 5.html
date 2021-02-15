@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		Какой инструмент встречается чаще всего в играх S.T.A.L.K.E.R. и Metro?
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>Г</h1>
+		</div>
+		<div class="letter2">
+			<h1>И</h1>
+		</div>
+		<div class="letter3">
+			<h1>Т</h1>
+		</div>
+		<div class="letter4">
+			<h1>А</h1>
+		</div>
+		<div class="letter5">
+			<h1>Р</h1>
+		</div>
+		<div class="letter6">
+			<h1>А</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="a">A</span>
+	<span class="fail">Б</span>
+	<span class="fail">В</span>
+	<span class="b">Г</span>
+	<span class="fail">Д</span>		
+	<span class="fail">Е</span>	
+	<span class="fail">Ё</span>
+	<span class="fail">Ж</span>
+	<span class="fail">З</span>
+	<span class="c">И</span>
+	<span class="fail">Й</span>
+	<span class="fail">К</span>
+	<span class="fail">Л</span>
+	<span class="fail">М</span>
+	<span class="fail">Н</span>
+	<span class="fail">О</span>
+	<span class="fail">П</span>
+	<span class="e">Р</span>
+	<span class="fail">С</span>
+	<span class="d">Т</span>
+	<span class="fail">У</span>
+	<span class="fail">Ф</span>
+	<span class="fail">Х</span>
+	<span class="fail">Ц</span>
+	<span class="fail">Ч</span>
+	<span class="fail">Ш</span>
+	<span class="fail">Щ</span>
+	<span class="fail">Ъ</span>
+	<span class="fail">Ы</span>
+	<span class="fail">Ь</span>
+	<span class="fail">Э</span>
+	<span class="fail">Ю</span>
+	<span class="fail">Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script type="text/javascript">
+		document.querySelector('.a').onclick = function(){
+			document.querySelector('.letter4').style.background = "white";
+			document.querySelector('.letter6').style.background = "white";
+		}
+		document.querySelector('.b').onclick = function(){
+			document.querySelector('.letter1').style.background = "white";
+		}
+		document.querySelector('.c').onclick = function(){
+			document.querySelector('.letter2').style.background = "white";
+		}
+		document.querySelector('.d').onclick = function(){
+			document.querySelector('.letter3').style.background = "white";
+		}
+		document.querySelector('.e').onclick = function(){
+			document.querySelector('.letter5').style.background = "white";
+		}
+		document.querySelector('.fail').onclick = function(){
+			alert(неверно)
+		}
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. Да, надо каждой букве придумывать новый класс.
+		3. Придумай свой вопрос и ответ. 
+		 */
+
+	</script>
+</body>
+</html>
